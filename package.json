@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "main": "server.js",
-  "scripts": {
-    "setup-project": "npm install && cd client && npm install --legacy-peer-deps",
+ "scripts": {
+    "setup-project": "npm install --include=dev && cd client && npm install --include=dev --legacy-peer-deps",
     "build-client": "cd client && npm run build",
     "setup-production": "npm run setup-project && npm run build-client",
     "server": "nodemon server.js",
